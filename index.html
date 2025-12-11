@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Pablo Padilla| Desarrollador Java</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Canvas de fondo -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Barra de progreso de scroll -->
+  <div class="scroll-progress"></div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="logo">
+      <span class="logo-bracket">&lt;</span>
+      Pablo
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <nav class="nav-desktop">
+      <a href="#inicio" class="nav-link active">Inicio</a>
+      <a href="#sobre" class="nav-link">Sobre mí</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#proyectos" class="nav-link">Proyectos</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Menú móvil -->
+  <nav class="nav-mobile">
+    <a href="#inicio" class="nav-link">Inicio</a>
+    <a href="#sobre" class="nav-link">Sobre mí</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#proyectos" class="nav-link">Proyectos</a>
+    <a href="#contacto" class="nav-link">Contacto</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="inicio">
+    <div class="hero-container">
+      <div class="hero-image">
+        <div class="profile-pic">
+          <img src="pictures/logoPrueba.jpeg" alt="Pablo - Desarrollador Java" />
+          <div class="profile-ring"></div>
+        </div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-greeting">Hola, soy</p>
+        <h1 class="hero-title">
+          <span class="typing-text">Pablo Padilla</span>
+          <span class="cursor">|</span>
+        </h1>
+        <p class="hero-subtitle">Desarrollador de Software</p>
+        <p class="hero-description">
+          Especializado en crear soluciones robustas y aplicaciones de Web. 
+          Apasionado por el código y la resolución de problemas.
+        </p>
+        <div class="hero-buttons">
+          <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+          <a href="#contacto" class="btn btn-secondary">Contacto</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <span class="title-number">01.</span> Sobre mí
+      </h2>
+      <div class="sobre-content" data-aos="fade-up" data-aos-delay="100">
+        <p>
+          Soy un desarrollador en formación con experiencia creando <strong>aplicaciones de web y de escritorio</strong>. 
+          Mi enfoque principal está en el desarrollo backend, donde soy capaz de diseñar arquitecturas limpias y eficientes.
+        </p>
+        <p>
+          Me apasiona resolver problemas reales con software y estoy constantemente aprendiendo nuevas tecnologías 
+          para mejorar mis habilidades. Actualmente, estoy profundizando mis conocimientos en bases de datos y 
+          explorando el desarrollo web full-stack.
+        </p>
+        <!--
+        <p>
+          Cuando no estoy programando, me gusta colaborar en proyectos open source y compartir conocimiento 
+          con la comunidad de desarrolladores.
+        </p>
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <span class="title-number">02.</span> Habilidades Técnicas
+      </h2>
+      <div class="skills-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-java"></i>
+          </div>
+          <h3>Java</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="85"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3>HTML5</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="80"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3>CSS3</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="75"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="70"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <h3>Git & GitHub</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="80"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>SQL</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" data-progress="60"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="section">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <span class="title-number">03.</span> Proyectos Destacados
+      </h2>
+
+      <div class="projects-grid">
+        
+        <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-featured-badge">⭐ Destacado</div>
+          <div class="project-image-container">
+            <img src="pictures/simulador.png" 
+                 alt="Simulador Epidemiológico SIR" 
+                 class="project-image" />
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <h3>Simulador Epidemiológico SIR</h3>
+                <p>Modelado matemático de enfermedades infecciosas</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-content">
+            <div class="project-header-new">
+              <h3 class="project-title-new">Simulador Epidemiológico SIR</h3>
+              <div class="project-actions">
+                <a href="https://github.com/Padilla-11" target="_blank" rel="noopener noreferrer" 
+                   class="project-btn" title="Ver código">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://super-malabi-78d996.netlify.app/" target="_blank" rel="noopener noreferrer" 
+                   class="project-btn" title="Ver demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            
+            <p class="project-summary">
+              Simulador interactivo de propagación de enfermedades infecciosas utilizando el modelo matemático SIR 
+              (Susceptibles-Infectados-Recuperados) con ecuaciones diferenciales y métodos numéricos de Runge-Kutta y Euler.
+            </p>
+            
+            <div class="project-tech">
+              <span class="tech-badge"><i class="fab fa-html5"></i> HTML5</span>
+              <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+              <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="tech-badge"><i class="fas fa-chart-line"></i> Chart.js</span>
+            </div>
+            
+            <button class="details-toggle">
+              <span>Ver detalles</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            
+            <div class="project-details-new">
+              <div class="details-grid">
+                <div class="detail-section">
+                  <h4><i class="fas fa-star"></i> Características principales</h4>
+                  <ul>
+                    <li>Implementación de ecuaciones diferenciales del modelo SIR</li>
+                    <li>Métodos numéricos: Runge-Kutta 4 y Euler</li>
+                    <li>Simulación de enfermedades: COVID-19, Dengue, Fiebre Amarilla</li>
+                    <li>Cálculo del número reproductivo básico (R₀)</li>
+                    <li>Validación con datos reales del Departamento del Cesar</li>
+                    <li>Análisis de sensibilidad de parámetros</li>
+                    <li>Diagramas de fase y gráficos temporales interactivos</li>
+                    <li>Exportación de datos en CSV y gráficos en PNG</li>
+                  </ul>
+                </div>
+                <div class="detail-section">
+                  <h4><i class="fas fa-code"></i> Tecnologías utilizadas</h4>
+                  <ul>
+                    <li>JavaScript vanilla para cálculos numéricos</li>
+                    <li>Chart.js para visualización de datos</li>
+                    <li>HTML5 y CSS3 para interfaz responsive</li>
+                    <li>Algoritmos de optimización para ajuste de parámetros</li>
+                    <li>Procesamiento de archivos CSV</li>
+                    <li>Proyecto académico - Universidad Popular del Cesar</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-featured-badge">⭐ Destacado</div>
+          <div class="project-image-container">
+            <img src="pictures/B-Learning.png" 
+                 alt="B-Learning - Curso Vacacional de Inglés" 
+                 class="project-image" />
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <h3>B-Learning</h3>
+                <p>Landing page para curso vacacional de inglés</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-content">
+            <div class="project-header-new">
+              <h3 class="project-title-new">B-Learning - Curso Vacacional</h3>
+              <div class="project-actions">
+                <a href="https://github.com/Padilla-11/Landing-Page-B-Learning" target="_blank" rel="noopener noreferrer" 
+                   class="project-btn" title="Ver código">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://padilla-11.github.io/Landing-Page-B-Learning/" target="_blank" rel="noopener noreferrer" 
+                   class="project-btn" title="Ver demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            
+            <p class="project-summary">
+              Landing page moderna y atractiva para un curso vacacional de inglés dirigido a niños de 5 a 13 años. 
+              Diseño enfocado en conversión con información clara de servicios, precios y galería de actividades.
+            </p>
+            
+            <div class="project-tech">
+              <span class="tech-badge"><i class="fab fa-html5"></i> HTML5</span>
+              <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+              <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="tech-badge"><i class="fas fa-mobile-alt"></i> Responsive</span>
+            </div>
+            
+            <button class="details-toggle">
+              <span>Ver detalles</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            
+            <div class="project-details-new">
+              <div class="details-grid">
+                <div class="detail-section">
+                  <h4><i class="fas fa-star"></i> Características principales</h4>
+                  <ul>
+                    <li>Diseño colorido y atractivo para el público infantil</li>
+                    <li>Secciones informativas: cursos, precios, horarios</li>
+                    <li>Galería de fotos de actividades previas</li>
+                    <li>Integración con WhatsApp e Instagram</li>
+                    <li>Tarjetas de información con iconos ilustrativos</li>
+                    <li>Animaciones suaves y llamadas a la acción</li>
+                    <li>Diseño responsive optimizado para móviles</li>
+                  </ul>
+                </div>
+                <div class="detail-section">
+                  <h4><i class="fas fa-code"></i> Tecnologías utilizadas</h4>
+                  <ul>
+                    <li>HTML5 semántico para mejor SEO</li>
+                    <li>CSS3 con Flexbox y Grid</li>
+                    <li>JavaScript para interactividad</li>
+                    <li>Font Awesome para iconografía</li>
+                    <li>Diseño mobile-first responsive</li>
+                    <li>Optimización de imágenes para carga rápida</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image-container">
+            <img src="pictures/Multi.png" 
+                 alt="Tali's - Recursos Ofi-Escolares" 
+                 class="project-image" />
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <h3>Tali's</h3>
+                <p>E-commerce de recursos ofi-escolares</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-content">
+            <div class="project-header-new">
+              <h3 class="project-title-new">Tali's - Recursos Ofi-Escolares</h3>
+              <div class="project-actions">
+                <a href="https://github.com/Padilla-11/Tali-s" target="_blank" rel="noopener noreferrer" 
+                   class="project-btn" title="Ver código">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://padilla-11.github.io/Tali-s/" target="_blank" rel="noopener noreferrer" 
+                   class="project-btn" title="Ver demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            
+            <p class="project-summary">
+              Sitio web comercial para una tienda de recursos escolares y de oficina en Valledupar. 
+              Incluye catálogo de productos, información de servicios y sistema de contacto directo.
+            </p>
+            
+            <div class="project-tech">
+              <span class="tech-badge"><i class="fab fa-html5"></i> HTML5</span>
+              <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+              <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="tech-badge"><i class="fas fa-store"></i> E-commerce</span>
+            </div>
+            
+            <button class="details-toggle">
+              <span>Ver detalles</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            
+            <div class="project-details-new">
+              <div class="details-grid">
+                <div class="detail-section">
+                  <h4><i class="fas fa-star"></i> Características principales</h4>
+                  <ul>
+                    <li>Catálogo de productos con filtros por categoría</li>
+                    <li>Tarjetas de productos con precios y descripciones</li>
+                    <li>Sección "Sobre Nosotros" con estadísticas</li>
+                    <li>Sistema de badges para ventajas competitivas</li>
+                    <li>Integración con WhatsApp para consultas</li>
+                    <li>Información de ubicación y horarios</li>
+                    <li>Diseño profesional y limpio</li>
+                  </ul>
+                </div>
+                <div class="detail-section">
+                  <h4><i class="fas fa-code"></i> Tecnologías utilizadas</h4>
+                  <ul>
+                    <li>HTML5 con estructura semántica</li>
+                    <li>CSS3 con diseño responsive</li>
+                    <li>JavaScript para filtros interactivos</li>
+                    <li>Font Awesome para iconos</li>
+                    <li>Layout con Grid y Flexbox</li>
+                    <li>Optimizado para SEO local</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-image-container">
+            <img src="pictures/portafolio.png" 
+                 alt="Portfolio Web Profesional" 
+                 class="project-image" />
+            <div class="project-overlay">
+              <div class="overlay-content">
+                <h3>Portfolio Personal</h3>
+                <p>Mi sitio web profesional</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-content">
+            <div class="project-header-new">
+              <h3 class="project-title-new">Portfolio Web Profesional</h3>
+              <div class="project-actions">
+                <a href="https://github.com/Padilla-11/Portafolio" target="_blank" rel="noopener noreferrer" 
+                   class="project-btn" title="Ver código">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#inicio" class="project-btn" title="Estás aquí">
+                  <i class="fas fa-home"></i>
+                </a>
+              </div>
+            </div>
+            
+            <p class="project-summary">
+              Portafolio personal moderno y profesional con animaciones avanzadas, canvas interactivo 
+              y efectos 3D. Diseñado para mostrar proyectos de manera impactante y memorable.
+            </p>
+            
+            <div class="project-tech">
+              <span class="tech-badge"><i class="fab fa-html5"></i> HTML5</span>
+              <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+              <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="tech-badge"><i class="fas fa-paint-brush"></i> Canvas</span>
+            </div>
+            
+            <button class="details-toggle">
+              <span>Ver detalles</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            
+            <div class="project-details-new">
+              <div class="details-grid">
+                <div class="detail-section">
+                  <h4><i class="fas fa-star"></i> Características principales</h4>
+                  <ul>
+                    <li>Canvas animado con sistema de partículas conectadas</li>
+                    <li>Efectos 3D con tilt interactivo en proyectos</li>
+                    <li>Skeleton loading para optimización percibida</li>
+                    <li>Animaciones de entrada con Intersection Observer</li>
+                    <li>Scroll spy y navegación suave</li>
+                    <li>Diseño responsive para todos los dispositivos</li>
+                    <li>Easter egg con código Konami</li>
+                    <li>Cursor personalizado con efectos hover</li>
+                  </ul>
+                </div>
+                <div class="detail-section">
+                  <h4><i class="fas fa-code"></i> Tecnologías utilizadas</h4>
+                  <ul>
+                    <li>HTML5 semántico y accesible</li>
+                    <li>CSS3 con variables custom y animaciones</li>
+                    <li>JavaScript ES6+ vanilla avanzado</li>
+                    <li>Canvas API para partículas animadas</li>
+                    <li>Intersection Observer API</li>
+                    <li>Font Awesome para iconografía</li>
+                    <li>Patrones de diseño modernos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">
+        <span class="title-number">04.</span> ¿Hablamos?
+      </h2>
+      <div class="contact-content" data-aos="fade-up" data-aos-delay="100">
+        <p class="contact-text">
+          Estoy siempre abierto a nuevas oportunidades, colaboraciones y conversaciones interesantes. 
+          Ya sea que tengas una pregunta o simplemente quieras conversar, ¡no dudes en contactarme!
+        </p>
+        <div class="contact-methods">
+          <a href="mailto:tucorreo@example.com" class="contact-card" target="_blank">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p>tucorreo@example.com</p>
+          </a>
+          <a href="https://wa.me/1234567890" class="contact-card" target="_blank" rel="noopener noreferrer">
+            <div class="contact-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>WhatsApp</h3>
+            <p>Envíame un mensaje</p>
+          </a>
+          <a href="https://github.com/tuperfil" class="contact-card" target="_blank" rel="noopener noreferrer">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <h3>GitHub</h3>
+            <p>@tuperfil</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>&copy; 2025 Pablo Padilla. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-social">
+          <a href="mailto:tucorreo@example.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://github.com/tuperfil" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <div class="footer-right">
+          <p>Diseñado y desarrollado con <span class="heart">❤</span></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón scroll to top -->
+  <button class="scroll-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
